@@ -25,7 +25,7 @@
                   <td>
                     {{ country.capital }}
                     {% if country.capital != "N/A" %}
-                    <a href="/api/countries/{{ country.name }}/capital/weather" class="btn btn-sm btn-primary ml-2">Weather</a>
+                    <a href="/api/countries/{{ country.capital }}/weather?country={{ country.name }}&lat={{ country.lat }}&lng={{ country.lng }}" class="btn btn-sm btn-primary ml-2">Weather</a>
                     {% endif %}
                   </td>
                   <td>{{ country.region }}</td>

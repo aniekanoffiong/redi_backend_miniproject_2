@@ -23,7 +23,7 @@ def test_get_countries():
         assert "Finland" in response.text
         assert "Nairobi" in response.text  # Check if 'Nairobi' appears in the response
 
-# Test for /api/countries/{name}/capital/weather route
+# Test for /api/countries/{capital}/weather route
 def test_get_country_weather():
     # Write your test logic here
     pass
