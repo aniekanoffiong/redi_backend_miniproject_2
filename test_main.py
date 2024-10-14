@@ -3,7 +3,6 @@ from fastapi.testclient import TestClient
 from unittest.mock import patch
 from main import app
 
-
 # Initialize TestClient
 client = TestClient(app)
 
@@ -24,7 +23,6 @@ def test_get_countries():
         assert "Finland" in response.text
         assert "Nairobi" in response.text  # Check if 'Nairobi' appears in the response
 
-
 # Test for /api/countries/{name}/capital/weather route
 def test_get_country_weather():
     # Write your test logic here
@@ -34,7 +32,6 @@ def test_get_country_weather():
 def test_country_not_found():
     # Write your test logic here
     pass
-
 
 ## Try writing some integration tests, where the actual third party APIs are called
 
